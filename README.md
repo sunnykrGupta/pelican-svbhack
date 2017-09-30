@@ -1,8 +1,32 @@
-## INSTALL
+## pelican-svbtle-responsive
 
-Clone the [repository](https://github.com/gfidente/pelican-svbhack), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+pelican-svbtle-responsive is a responsive theme for Pelican. Customized from forks.
 
-## PELICANCONF.PY
+## Demo
+
+You can see the [theme in action](https://sunnykrgupta.github.io/).
+
+![screenshot](screenshot.png)
+
+
+## Features
+
+- Clean and responsive design
+- [Disqus](https://disqus.com/) Comments
+- Customizable Syntax highlighting via [pygments][pygments]
+- Google analytics
+- Twitter Widgets [twitter-cards]
+- Navigator for social sites on top : google+, twitter, github, linkedin, email
+
+[Twitter-Widgets]: https://dev.twitter.com/web/embedded-timelines
+
+
+## Installation
+
+Clone the [repository](https://github.com/sunnykrGupta/pelican-svbhack-responsive), edit your `pelicanconf.py` and modify the `THEME` variable to make it point to the downloaded theme location.
+
+
+## Configurations
 
 Supports a number of common global variables but patches are welcomed if you need better support.
 
@@ -16,12 +40,17 @@ Supports a number of common global variables but patches are welcomed if you nee
 
 - `INTERNET_DEFENSE_LEAGUE` set this to `True` if you want to enable the [Internet Defense League](http://internetdefenseleague.org) code
 
-When developing locally, you may want to set the following variable: `SITEURL = http://localhost:8000`
+-  `SITEURL = http://localhost:8000` When developing locally.
 
-## MODIFICATIONS
+-  `widget_profile_url = "https://twitter.com/@user"`
+-  `widget_profile_name = "@user"`
+-  `widget_id_int = "WIDGET-ID"`
 
-- Accent color can be changed by editing `@accent` in `./static/css/style.less`.
-- A different Pygmentize theme can be used by editing `./Makefile` and running `make pygments`.
+
+
+## AUTHOR
+
+pelican-svbhack-responsive is authored by Sunny Kumar.
 
 ## LICENSE
 
